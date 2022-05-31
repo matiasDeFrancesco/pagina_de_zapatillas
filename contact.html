@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./contact.css">
+  <title>Contacto</title>
+</head>
+<body>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: rgb(255, 255, 255);">Fracture</a></div>
+    <ul class="links">
+        <li><a href="index.html">Home</a></li>           
+        <li><a href="/form.html">Form</a></li>           
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+  </nav>
+
+  <h1 class="title">Contact</h1>
+
+  <form action="formulario-contacto.php" method="post">	
+    <input name="nombre" type="text" placeholder="Nombre" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+    <input name="email" type="email" placeholder="Correo electrónico" required />	
+    <textarea name="consulta" placeholder="¿Cuál es el motivo de tu consulta?" rows="6" required></textarea>
+    <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
+  </form>	
+  <div class="container">
+    <div class>
+      <p>Shopping Liniers</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13129.837159491004!2d-58.51620045367431!3d-34.64310205789924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc840b7f50397%3A0xe45350367079a3dd!2sPlaza%20Liniers%20Shopping!5e0!3m2!1ses-419!2sar!4v1653969426054!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class>
+      <p>Shopping Caballito</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.0355311765907!2d-58.4406313757219!3d-34.619359996486494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca473500c481%3A0xcad5a77f80c86b0f!2sAv.%20Rivadavia%205161%2C%20C1424CEG%20CABA!5e0!3m2!1ses-419!2sar!4v1653969487093!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</body>
+</html>
